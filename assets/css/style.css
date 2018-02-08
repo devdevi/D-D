@@ -1,0 +1,25 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.buttonP{
+	border: 50px solid white;
+}
+
+/* PARA EJERCICIO HTML5 */
+.marco-foto {
+  min-height: 150px;
+  max-height: 10%;
+  margin-top: 20px;
+}
