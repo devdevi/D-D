@@ -2,6 +2,10 @@
   $(function() {
     $('.button-collapse').sideNav();
     $('select').material_select();
+
+    $('.buttonP').click(function(){
+      $('#dragD').show();
+    })
   }); // end of document ready
 })(jQuery);
 $('#autocomplete-input').autocomplete({
