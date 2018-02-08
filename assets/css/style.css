@@ -14,7 +14,7 @@
 	font-size: inherit;
 }
 .buttonP{
-	border: 50px solid white;
+	border: 1px solid white;
 }
 
 /* PARA EJERCICIO HTML5 */
@@ -22,4 +22,7 @@
   min-height: 150px;
   max-height: 10%;
   margin-top: 20px;
+}
+strong{
+	text-transform: uppercase;
 }

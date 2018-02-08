@@ -1,10 +1,13 @@
 (function($) {
   $(function() {
+     $('#dragD').hide();
     $('.button-collapse').sideNav();
     $('select').material_select();
 
     $('.buttonP').click(function(){
       $('#dragD').show();
+      $('#initD').hide();
+
     })
   }); // end of document ready
 })(jQuery);
