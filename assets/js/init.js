@@ -1,29 +1,11 @@
-(function($) {
-  $(function() {
-    $('#dragD').hide();
-    $('.button-collapse').sideNav();
-    $('select').material_select();
 
-    $('.buttonP').click(function() {
-      $('#dragD').show();
-      $('#initD').hide();
-
-});
-  }); // end of document ready
-})(jQuery);
-$('#autocomplete-input').autocomplete({
-  data: {
-	  'Apple': null,
-	  'Microsoft': null,
-	  'Google': 'https://placehold.it/250x250'
-  },
-  limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
-  onAutocomplete: function(val) {
-	  // Callback function when value is autcompleted.
-  },
-  minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
-});
-	      // end of jQuery name space      
+$(document).ready(function() {
+  $('#dragD').hide();
+  $('#alert').hide();
+  $('.button-collapse').sideNav();
+  $('select').material_select();
+}); // end of document ready
+   
 // ACA DECLARAREMOS NUESTRAS FUNCIONES PARA HACER POSIBLE LA TRANSFERNCIA DE DATOS
 function drag(ev) {
   console.log(ev.target.src);
@@ -35,17 +17,37 @@ function permitirDrop(ev) {
 }
 function drop(ev) {
   ev.preventDefault();
-  var id_foto = ev.dataTransfer.getData('text');// ACA RECUPERAMOS LOS DATOS 
-  ev.target.appendChild(document.getElementById(id_foto));
+  var idPic = ev.dataTransfer.getData('text');// ACA RECUPERAMOS LOS DATOS 
+  ev.target.appendChild(document.getElementById(idPic));
 } 
 
-var config = {
-  apiKey: 'AIzaSyCRo9Y6hu2fPg88S00vd4-2lb9E-2nzgws',
-  authDomain: 'draganddrop-ca86f.firebaseapp.com',
-  databaseURL: 'https://draganddrop-ca86f.firebaseio.com',
-  projectId: 'draganddrop-ca86f',
-  storageBucket: 'draganddrop-ca86f.appspot.com',
-  messagingSenderId: '402962922580'
-};
-firebase.initializeApp(config); 
-var provider = new firebase.auth.FacebookAuthProvider();
+$('#buttonP').click(function() {
+  var chart = (/([A-Za-z]*)/);
+  var password = $('#password').val().length;;
+  var checkPass = $('#password').val().match(chart);
+  var alert = $('#alert');
+  var email = $('#email');  
+  // console.log(checkPass);                                     
+  if (email.hasClass('valid') && password !== 0 && password >= 6) {
+    $('#dragD').show();
+    $('#initD').hide();
+  } else if (email.hasClass('invalid')) {
+    alert.show();
+    alert.text('Ingresa un formato de correo válido');
+    setTimeout(function() {
+      alert.hide(); 
+    }, 5000);
+  } if (checkPass[0] === '') {
+    alert.text('Ingresa un password sin numeros');
+    alert.show();
+    setTimeout(function() { 
+      alert.hide();
+    }, 5000);
+  } if (password <= 6) {
+    alert.text('Ingresa un password mayor de 6 caracteres');
+    alert.show();
+    setTimeout(function() { 
+      alert.hide();
+    }, 5000);
+  }
+});

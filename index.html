@@ -20,19 +20,20 @@
         <h1 class="header center white-text">Instagram</h1>
         <div class="row">
           <div class="input-field col s12 white black-text">
-            <input id="email" type="email" class="validate" re>
-            <label for="email" data-error="wrong" data-success="right">Email</label>
+            <input id="email" type="email" class="validate " required>
+            <label for="email" data-error="Ingresa un correo valido">Email</label>
           </div>
-          <div class="input-field col s12 white black-text">
-          <input id="password" type="password" class="validate">
+          <div class="input-field col s12 white black-text ">
+          <input id="password" type="password" required>
           <label for="password">Password</label>
+          <div id="alert" class="red white-text"></div>
         </div>
         </div>
         <div class="row center">
           <div class="col s12">
-           <a  class="btn-flat waves-effect waves-light white-text buttonP"><strong>Iniciar sesión</strong></a>
+           <a  class="btn-flat waves-effect waves-light white-text" id="buttonP"><strong>Iniciar sesión</strong></a>
            <p class="light">Al registrarte, aceptas nuestras Condiciones y la <a href="">Política</a> de <a href="">privacidad</a>.</p>
-           <a href=""  class="btn-flat waves-effect waves-light white-text"><i class="fab fa-facebook-square"></i> <strong>Iniciar sesión con Facebook</strong></a>
+           <a href=""  class="btn-flat waves-effect waves-light white-text disabled"><i class="fab fa-facebook-square"></i> <strong>Iniciar sesión con Facebook</strong></a>
           </div>
         </div>
       </div>
