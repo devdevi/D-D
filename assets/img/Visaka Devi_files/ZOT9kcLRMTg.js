@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["rG38I"]); }
-
-__d("AdsLWILeadsManagementTabLayout",["AdsLWISingleColumnLayout","JSResource"],(function a(b,c,d,e,f,g){"use strict";__p&&__p();var h,i;h=babelHelpers.inherits(j,c("AdsLWISingleColumnLayout"));i=h&&h.prototype;j.prototype.getMainAreaComponents=function(){return[{component:c("JSResource")("AdsLWILegacyLeadsContainer.react").__setRef("AdsLWILeadsManagementTabLayout")}]};j.prototype.getFooterConfig=function(){return{isHidden:true}};function j(){h.apply(this,arguments)}f.exports=new j()}),null);

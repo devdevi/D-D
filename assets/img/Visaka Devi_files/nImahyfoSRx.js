@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["grbxq"]); }
-
-__d("AdsLWISettingsManagementTabPlugin",["ix","fbt","BoostedComponentAutomatedAdsDialogTabs","adsLWICanViewerEditSelector","asset","AdsLWISettingsManagementTabLayout"],(function a(b,c,d,e,f,g,h,i){"use strict";var j=c("BoostedComponentAutomatedAdsDialogTabs").SETTINGS,k={type:"ads_lwi/management_tab",key:"settings-management-tab",pivots:{managementTabType:j},label:i._("Settings"),activeIcon:h("407584"),defaultIcon:h("378245"),layoutDelegate:c("AdsLWISettingsManagementTabLayout"),isEligible:c("adsLWICanViewerEditSelector")};f.exports=k}),null);

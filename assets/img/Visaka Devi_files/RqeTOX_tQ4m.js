@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["eSrG0"]); }
-
-__d("AdsLWISummaryManagementTabPlugin",["ix","fbt","BoostedComponentAutomatedAdsDialogTabs","JSResource","asset","AdsLWISummaryManagementTabLayout"],(function a(b,c,d,e,f,g,h,i){"use strict";var j=c("BoostedComponentAutomatedAdsDialogTabs").SUMMARY,k={type:"ads_lwi/management_tab",key:"summary-management-tab",pivots:{managementTabType:j},label:i._("Overview"),activeIcon:h("406449"),defaultIcon:h("463714"),layoutDelegate:c("AdsLWISummaryManagementTabLayout"),bottomComponents:[{component:c("JSResource")("AdsLWILegacyCreativeRefreshSubmissionBarContainer.react").__setRef("AdsLWISummaryManagementTabPlugin")}]};f.exports=k}),null);

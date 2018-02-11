@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["bS0ep"]); }
-
-__d("AdsLWIInsightsManagementTabPlugin",["ix","fbt","BoostedComponentAutomatedAdsDialogTabs","asset","AdsLWIInsightsManagementTabLayout"],(function a(b,c,d,e,f,g,h,i){"use strict";var j=c("BoostedComponentAutomatedAdsDialogTabs").INSIGHTS,k={type:"ads_lwi/management_tab",key:"insights-management-tab",pivots:{managementTabType:j},label:i._("Results"),activeIcon:h("412415"),defaultIcon:h("372430"),layoutDelegate:c("AdsLWIInsightsManagementTabLayout")};f.exports=k}),null);

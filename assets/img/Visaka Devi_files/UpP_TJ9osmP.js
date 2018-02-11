@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["8+YfM"]); }
-
-__d("getDialogBodyHeight",["BoostedComponentConstants","FBSimplePaneDialogUtils"],(function a(b,c,d,e,f,g){"use strict";var h=c("BoostedComponentConstants").DIALOG_MAX_HEIGHT,i=c("BoostedComponentConstants").DIALOG_MIN_HEIGHT,j=c("BoostedComponentConstants").DIALOG_MARGIN,k=c("BoostedComponentConstants").FOOTER_PANE_HEIGHT;function l(m,n){var o=m.getFooterConfig().isHidden?k:0;return n||c("FBSimplePaneDialogUtils").getDialogColumnMaxHeight(i,h,j)+o}f.exports=l}),null);
