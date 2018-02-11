@@ -51,3 +51,22 @@ $('#buttonP').click(function() {
     }, 5000);
   }
 });
+// firebase trabaja con referencias, atravez de la referencias accedemos  a la data 
+// Initialize Firebase
+var config = {
+  apiKey: 'AIzaSyCRo9Y6hu2fPg88S00vd4-2lb9E-2nzgws',
+  authDomain: 'draganddrop-ca86f.firebaseapp.com',
+  databaseURL: 'https://draganddrop-ca86f.firebaseio.com',
+  projectId: 'draganddrop-ca86f',
+  storageBucket: 'draganddrop-ca86f.appspot.com',
+  messagingSenderId: '402962922580'
+};
+  firebase.initializeApp(config);
+
+  var ref = firebase.database().ref();
+  // Esto es un evento que devuelve el valor de el hijo'hola'
+  ref.child('hola').on('value',function(snapshot){ //el, elemento snapSHot forografia instantanea de como esta
+    console.log(snapshot.val())
+    document.getElementById('reg').textContent = snapshot.val();
+  });
+  

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["Dnhp3"]); }
+
+__d("AdsLWISettingsManagementTabLayout",["AdsLWISingleColumnLayout","JSResource"],(function a(b,c,d,e,f,g){"use strict";var h,i;h=babelHelpers.inherits(j,c("AdsLWISingleColumnLayout"));i=h&&h.prototype;j.prototype.getMainAreaComponents=function(){return[{component:c("JSResource")("AdsLWILegacyUnsupportedNoticeContainer.react").__setRef("AdsLWISettingsManagementTabLayout")},{component:c("JSResource")("AdsLWILegacySettingsContainer.react").__setRef("AdsLWISettingsManagementTabLayout")}]};function j(){h.apply(this,arguments)}f.exports=new j()}),null);

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["NwNUD"]); }
+
+__d("adsLWIBoostedComponentObjectiveSelector",["BoostedComponentExistingAdInfoStoreData","adsCreateSelector","adsLWIExistingAdInfoStoreDataSelector"],(function a(b,c,d,e,f,g){"use strict";var h=c("adsCreateSelector")([c("adsLWIExistingAdInfoStoreDataSelector")],function(i){return i.getObjective()},f.id+".adsLWIBoostedComponentObjectiveSelector");f.exports=h}),null);

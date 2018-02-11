@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["3R+7P"]); }
+
+__d("adsLWILeadGenStoreDataSelector",["AdsStoreUtils","BoostedComponentLeadGenStoreData","BoostedComponentLeadGenStoreV2","adsLWICreateLegacyKeyedStoreDataSelector"],(function a(b,c,d,e,f,g){"use strict";var h=c("AdsStoreUtils").toSelector(c("BoostedComponentLeadGenStoreV2")),i=c("adsLWICreateLegacyKeyedStoreDataSelector")(h,function(j){return new(c("BoostedComponentLeadGenStoreData"))(j)});f.exports=i}),null);

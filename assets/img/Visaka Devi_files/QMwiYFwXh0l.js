@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["KwB6S"]); }
+
+__d("FBStoriesPrivacyChangeSubscription",["BaseGraphQLSubscription","FBStoriesPrivacyChangeSubscriptionWebGraphQLSubscription","uuid"],(function a(b,c,d,e,f,g){var h=babelHelpers["extends"]({},c("BaseGraphQLSubscription"),{_getTopic:function i(j){return"gqls/unified_stories_privacy_change_subscribe/owner_id_"+j},_getQueryID:function i(){return c("FBStoriesPrivacyChangeSubscriptionWebGraphQLSubscription").getDocID()},_getQueryParameters:function i(j){return{input:JSON.stringify({client_subscription_id:c("uuid")(),owner_id:j})}},_getSubscriptionCallName:function i(){return"unified_stories_privacy_change_subscribe"}});f.exports=h}),null);

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["SjpbO"]); }
+
+__d("AdsCFAdgroupSetPostEditModeActionDataReducer",["AdsCFAdgroupDataProvider","AdsCFAdgroupSetPostEditModeActionDataReducerPlugin","AdsDataReducer"],(function a(b,c,d,e,f,g){"use strict";var h=c("AdsDataReducer").create(c("AdsCFAdgroupDataProvider"),{},c("AdsCFAdgroupSetPostEditModeActionDataReducerPlugin").reduce);f.exports=h}),null);

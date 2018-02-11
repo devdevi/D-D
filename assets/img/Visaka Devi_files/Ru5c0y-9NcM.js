@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["HC87+"]); }
+
+__d("AdsLWIAutomatedAdsManagementPhase",["AdsLWIBaseManagementPhase","AdsLWIPhaseTypes","BoostedComponentProduct","AdsLWIAutomatedAdsManagementLayout"],(function a(b,c,d,e,f,g){"use strict";__p&&__p();var h,i,j=c("AdsLWIPhaseTypes").AUTOMATED_ADS_MANAGEMENT,k=c("BoostedComponentProduct").BOOSTED_AUTOMATED_ADS;h=babelHelpers.inherits(l,c("AdsLWIBaseManagementPhase"));i=h&&h.prototype;l.prototype.getLayout=function(){return c("AdsLWIAutomatedAdsManagementLayout")};l.prototype.getPhaseType=function(){return j};l.prototype.getProduct=function(){return k};function l(){h.apply(this,arguments)}f.exports=new l()}),null);
